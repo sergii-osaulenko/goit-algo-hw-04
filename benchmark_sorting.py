@@ -1,4 +1,8 @@
 import csv
+import timeit
+
+from algorithms import insertion_sort, merge_sort, timsort
+from generate_arrays import generate_arrays
 
 sizes = [100, 1000, 5000]
 kinds = ["random", "sorted", "reversed", "almost_sorted"]
