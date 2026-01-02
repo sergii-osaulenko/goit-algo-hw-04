@@ -1,3 +1,5 @@
+import random
+
 def generate_arrays(sizes, kind="random"):
     arrays = {}
     for n in sizes:
