@@ -17,7 +17,7 @@ for kind in kinds:
             t = timeit.timeit(lambda: func(arr), number=5)
             results.append((kind, n, algo_name, t))
 
-# зберігаємо результати в CSV, щоб легко аналізувати й будувати таблиці/графіки
+# Зберігаємо результати в CSV, щоб легко аналізувати й будувати таблиці/графіки
 with open("sorting_benchmark.csv", "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["data_type", "n", "algorithm", "time_sec_5_runs"])
