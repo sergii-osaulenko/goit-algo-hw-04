@@ -3,7 +3,7 @@ import timeit
 
 # Сортування вставками (O(n^2))
 def insertion_sort(arr):
-    a = arr[:]  # працюємо з копією
+    a = arr[:]  # Працюємо з копією
     for i in range(1, len(a)):
         key = a[i]
         j = i - 1
