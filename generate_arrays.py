@@ -9,7 +9,7 @@ def generate_arrays(sizes, kind="random"):
             arrays[n] = list(range(n, 0, -1))
         elif kind == "almost_sorted":
             base = list(range(n))
-            # робимо кілька випадкових перестановок
+            # Робимо кілька випадкових перестановок
             for _ in range(max(1, n // 100)):
                 i, j = random.randrange(n), random.randrange(n)
                 base[i], base[j] = base[j], base[i]
